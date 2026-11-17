@@ -9,9 +9,9 @@ Windows 에 연결된 드라이브의 **드라이브 종류, 물리 디스크와
 
 ## 다운로드
 
-[Releases](../../releases/latest) 에서 `CheckDiskDriveType.exe` 를 내려받습니다.
+[Releases](../../releases/latest) 에서 `CheckDiskDriveType_vX.Y.Z.W.zip` 을 내려받아 압축을 풉니다.
 
-- 설치가 필요 없는 단일 실행 파일입니다.
+- 설치 없이 `CheckDiskDriveType.exe` 를 바로 실행하면 됩니다.
 - 디지털 서명된 파일입니다. 파일 속성의 **디지털 서명** 탭에서 서명자와 타임스탬프를 확인할 수 있습니다.
 
 ## 실행 환경
@@ -61,9 +61,9 @@ volume GUID, disk size, and vendor, product and serial number** of each connecte
 
 ### Download
 
-Download `CheckDiskDriveType.exe` from [Releases](../../releases/latest).
+Download `CheckDiskDriveType_vX.Y.Z.W.zip` from [Releases](../../releases/latest) and extract it.
 
-- A single executable that needs no installation.
+- No installation is needed. Just run `CheckDiskDriveType.exe`.
 - The file is digitally signed. You can check the signer and timestamp on the **Digital Signatures** tab of the file properties.
 
 ### Requirements
