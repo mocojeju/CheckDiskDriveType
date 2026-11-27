@@ -21,7 +21,7 @@ Windows 에 연결된 드라이브의 **드라이브 종류, 물리 디스크와
 ## 사용법
 
 1. `CheckDiskDriveType.exe` 를 실행합니다.
-2. **Check** 를 누르면 A: ~ Z: 드라이브를 조회해 표에 표시합니다.
+2. **Check** 를 누르면 A: ~ Z: 드라이브와 폴더에 마운트된 볼륨(예: 구글 드라이브)을 조회해 표에 표시합니다.
 3. **Save As ...** 로 결과를 텍스트 파일로 저장합니다.
 4. **ALT + F12** 를 누르면 디버그 콘솔이 열려 조회 과정의 상세 로그를 볼 수 있습니다. 다시 누르면 닫힙니다.
 
@@ -29,7 +29,7 @@ Windows 에 연결된 드라이브의 **드라이브 종류, 물리 디스크와
 
 | 컬럼 | 내용 |
 |---|---|
-| Drive | 드라이브 문자 |
+| Drive | 드라이브 문자, 또는 폴더 마운트 경로 (예: `D:\Google Drive`) |
 | Drive Type | `DRIVE_FIXED`, `DRIVE_REMOVABLE`, `DRIVE_CDROM`, `DRIVE_REMOTE` 등 |
 | Disk : Partition | 볼륨이 있는 물리 디스크와 파티션 번호 (예: `PhysicalDrive0:3`) |
 | Disk Type | 파티션 스타일과 기본/동적 디스크 (예: `GPT : BASIC`, `MBR : DYNAMIC`, `RAW`) |
@@ -73,7 +73,7 @@ Download `CheckDiskDriveType_vX.Y.Z.W.zip` from [Releases](../../releases/latest
 ### Usage
 
 1. Run `CheckDiskDriveType.exe`.
-2. Click **Check** to scan drives A: to Z: and list them in the table.
+2. Click **Check** to scan drives A: to Z: and volumes mounted in folders (e.g. Google Drive), and list them in the table.
 3. Click **Save As ...** to save the result as a text file.
 4. Press **ALT + F12** to open a debug console with detailed logs of the scan. Press it again to close it.
 
@@ -81,7 +81,7 @@ Download `CheckDiskDriveType_vX.Y.Z.W.zip` from [Releases](../../releases/latest
 
 | Column | Description |
 |---|---|
-| Drive | Drive letter |
+| Drive | Drive letter, or folder mount path (e.g. `D:\Google Drive`) |
 | Drive Type | `DRIVE_FIXED`, `DRIVE_REMOVABLE`, `DRIVE_CDROM`, `DRIVE_REMOTE`, etc. |
 | Disk : Partition | Physical disk and partition number of the volume (e.g. `PhysicalDrive0:3`) |
 | Disk Type | Partition style and basic/dynamic disk (e.g. `GPT : BASIC`, `MBR : DYNAMIC`, `RAW`) |
